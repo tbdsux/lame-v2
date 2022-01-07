@@ -14,7 +14,7 @@
       <select
         v-model="mode"
         @change="resetInputOutput"
-        class="mb-4 py-2 px-6 rounded-lg border-2 focus:outline-none focus:border-green-300 bg-white text-green-900"
+        class="mb-4 py-2 px-6 rounded-lg border-2 focus:outline-none focus:border-emerald-300 bg-white text-emerald-900"
       >
         <option value="decode">Decode</option>
         <option value="encode">Encode</option>
@@ -29,7 +29,7 @@
             v-model="input"
             :placeholder="'enter the string to ' + mode"
             @input="handleModeChange"
-            class="text-black border-2 rounded-lg hover:border-green-300 focus:border-green-300 focus:outline-none h-56 p-4"
+            class="text-black border-2 rounded-lg hover:border-emerald-300 focus:border-emerald-300 focus:outline-none h-56 p-4"
           ></textarea>
         </div>
         <div class="flex flex-col">
@@ -38,7 +38,7 @@
             :value="output"
             placeholder="output..."
             readonly
-            class="text-black border-2 rounded-lg hover:border-green-300 focus:border-green-300 focus:outline-none h-56 p-4"
+            class="text-black border-2 rounded-lg hover:border-emerald-300 focus:border-emerald-300 focus:outline-none h-56 p-4"
           >
           </textarea>
         </div>

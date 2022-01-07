@@ -15,7 +15,7 @@
         Note:
         <strong>
           <a
-            class="hover:text-green-500"
+            class="hover:text-emerald-500"
             href="https://github.com/TheBoringDude/simple-rss-worker"
           >
             more about this project
@@ -31,12 +31,12 @@
               v-model="rssUrl"
               type="url"
               placeholder="enter the rss url to query"
-              class="text-black w-full py-2 px-3 rounded-lg border-2 focus:border-green-300 hover:border-green-300 focus:outline-none"
+              class="text-black w-full py-2 px-3 rounded-lg border-2 focus:border-emerald-300 hover:border-emerald-300 focus:outline-none"
             />
             <button
               :disabled="querying"
               @click="parseQuery"
-              class="mt-1 sm:mt-0 py-2 px-6 bg-green-400 hover:bg-green-500 rounded-lg ml-2 text-white"
+              class="mt-1 sm:mt-0 py-2 px-6 bg-emerald-400 hover:bg-emerald-500 rounded-lg ml-2 text-white"
             >
               {{ queryText }}
             </button>
@@ -48,7 +48,7 @@
           <textarea
             :value="output"
             readonly
-            class="text-black py-2 px-3 rounded-lg border-2 focus:border-green-300 hover:border-green-300 focus:outline-none h-72"
+            class="text-black py-2 px-3 rounded-lg border-2 focus:border-emerald-300 hover:border-emerald-300 focus:outline-none h-72"
           ></textarea>
         </div>
       </div>

@@ -4,7 +4,7 @@
     <div class="w-11/12 mx-auto flex items-center justify-between my-8">
       <div>
         <nuxt-link to="/">
-          <h4 class="text-green-500 text-2xl font-extrabold tracking-wide">
+          <h4 class="text-emerald-500 text-2xl font-extrabold tracking-wide">
             lame
           </h4>
         </nuxt-link>
@@ -25,7 +25,7 @@
         <ul class="block text-sm">
           <li>
             <a
-              class="text-gray-700 hover:text-green-500"
+              class="text-gray-700 hover:text-emerald-500"
               target="_blank"
               rel="noreferrer"
               title="Visit also LCL-Paste"
@@ -35,7 +35,7 @@
           </li>
           <li>
             <a
-              class="text-gray-700 hover:text-green-500"
+              class="text-gray-700 hover:text-emerald-500"
               target="_blank"
               rel="noreferrer"
               title="Visit also phurma"
@@ -45,7 +45,7 @@
           </li>
           <li>
             <a
-              class="text-gray-700 hover:text-green-500"
+              class="text-gray-700 hover:text-emerald-500"
               target="_blank"
               rel="noreferrer"
               title="Visit also World of Cryptopups"

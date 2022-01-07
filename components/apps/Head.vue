@@ -1,6 +1,6 @@
 <template>
   <div class="w-5/6 mx-auto text-center my-12">
-    <h4 class="text-3xl font-black tracking-wide text-green-500">
+    <h4 class="text-3xl font-black tracking-wide text-emerald-500">
       {{ app.title }}
     </h4>
     <p class="text-lg text-gray-600">{{ app.description }}</p>

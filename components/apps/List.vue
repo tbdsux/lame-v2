@@ -4,16 +4,16 @@
       <li
         :key="index"
         v-for="(app, index) in apps"
-        class="border-2 border-green-300 p-4 rounded-md"
+        class="border-2 border-emerald-300 p-4 rounded-md"
       >
-        <h3 class="text-2xl font-bold text-green-500">
+        <h3 class="text-2xl font-bold text-emerald-500">
           {{ app.title }}
         </h3>
         <p class="text-gray-600 text-lg">{{ app.description }}</p>
         <div class="mt-4">
           <NuxtLink
             :to="'/apps/' + app.url"
-            class="py-2 px-6 rounded-lg text-white bg-green-400 hover:bg-green-500"
+            class="py-2 px-6 rounded-lg text-white bg-emerald-400 hover:bg-emerald-500"
             >visit</NuxtLink
           >
         </div>
