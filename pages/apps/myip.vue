@@ -11,11 +11,13 @@
     <hr />
 
     <AppsContainer>
-      <h3 class="text-xl font-bold mb-2">Your Current IP Information:</h3>
+      <h3 class="text-xl font-bold mb-4 text-white">
+        Your Current IP Information:
+      </h3>
       <div
         class="bg-white p-6 rounded-lg text-black text-left max-w-xl mx-auto overflow-x-auto"
       >
-        <pre><code v-if="pending">fetching...</code><code v-else>{{ JSON.stringify(data, null, 4) }}</code></pre>
+        <pre><code v-if="pending">fetching...</code><code v-else class="text-sm">{{ JSON.stringify(data, null, 4) }}</code></pre>
       </div>
     </AppsContainer>
   </div>

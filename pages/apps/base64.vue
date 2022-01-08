@@ -11,34 +11,36 @@
     <hr />
 
     <AppsContainer>
-      <select
-        v-model="mode"
-        @change="resetInputOutput"
-        class="mb-4 py-2 px-6 rounded-lg border-2 focus:outline-none focus:border-emerald-300 bg-white text-emerald-900"
-      >
-        <option value="decode">Decode</option>
-        <option value="encode">Encode</option>
-      </select>
+      <div class="text-left">
+        <select
+          v-model="mode"
+          @change="resetInputOutput"
+          class="mb-4 py-2 px-6 rounded-lg border-2 focus:outline-none focus:border-emerald-300 bg-gray-100 hover:bg-white duration-300 text-gray-900"
+        >
+          <option value="decode">Decode</option>
+          <option value="encode">Encode</option>
+        </select>
+      </div>
 
       <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-left">
         <div class="flex flex-col">
-          <label class="mb-1" for="string-input"
+          <label class="mb-1 text-white" for="string-input"
             >base64 string to {{ mode }}</label
           >
           <textarea
             v-model="input"
             :placeholder="'enter the string to ' + mode"
             @input="handleModeChange"
-            class="text-black border-2 rounded-lg hover:border-emerald-300 focus:border-emerald-300 focus:outline-none h-56 p-4"
+            class="text-gray-900 border-2 rounded-md hover:border-green-300 focus:border-green-300 focus:outline-none h-96 p-4 bg-gray-50"
           ></textarea>
         </div>
         <div class="flex flex-col">
-          <label class="mb-1" for="output">output:</label>
+          <label class="mb-1 text-white" for="output">output:</label>
           <textarea
             :value="output"
             placeholder="output..."
             readonly
-            class="text-black border-2 rounded-lg hover:border-emerald-300 focus:border-emerald-300 focus:outline-none h-56 p-4"
+            class="text-gray-900 border-2 rounded-md hover:border-green-300 focus:border-green-300 focus:outline-none h-96 p-4 bg-gray-50"
           >
           </textarea>
         </div>

@@ -11,11 +11,11 @@
     <hr />
 
     <AppsContainer>
-      <div class="text-left">
+      <div class="text-left text-white">
         Note:
         <strong>
           <a
-            class="hover:text-emerald-500"
+            class="hover:underline"
             href="https://github.com/TheBoringDude/simple-rss-worker"
           >
             more about this project
@@ -23,32 +23,37 @@
         </strong>
       </div>
 
-      <div class="w-full sm:w-4/5 lg:w-3/4 xl:w-2/3 mx-auto">
-        <div class="flex flex-col my-4">
-          <label for="rss-url-input" class="mb-1">Enter a RSS URL:</label>
+      <div class="w-full sm:w-4/5 lg:w-3/4 xl:w-2/3 mx-auto mt-8">
+        <div class="flex flex-col my-4 text-left">
+          <label for="rss-url-input" class="mb-1 text-white"
+            >Enter a RSS URL:</label
+          >
           <div class="flex flex-col sm:flex-row">
             <input
               v-model="rssUrl"
               type="url"
               placeholder="enter the rss url to query"
-              class="text-black w-full py-2 px-3 rounded-lg border-2 focus:border-emerald-300 hover:border-emerald-300 focus:outline-none"
+              class="text-black w-full py-2 px-3 rounded-md border-2 focus:border-emerald-300 hover:border-emerald-300 focus:outline-none"
             />
             <button
               :disabled="querying"
               @click="parseQuery"
-              class="mt-1 sm:mt-0 py-2 px-6 bg-emerald-400 hover:bg-emerald-500 rounded-lg ml-2 text-white"
+              class="mt-1 sm:mt-0 py-2 px-6 bg-green-500 hover:bg-emerald-500 duration-300 rounded-md ml-2 text-white"
             >
               {{ queryText }}
             </button>
           </div>
         </div>
 
-        <div class="flex flex-col my-4">
-          <label for="rss-json-output">json output:</label>
+        <div class="flex flex-col my-4 text-left">
+          <label for="rss-json-output" class="mb-1 text-white"
+            >json output:</label
+          >
           <textarea
             :value="output"
             readonly
-            class="text-black py-2 px-3 rounded-lg border-2 focus:border-emerald-300 hover:border-emerald-300 focus:outline-none h-72"
+            placeholder="... rss json output"
+            class="text-black py-2 px-3 rounded-md border-2 focus:border-emerald-300 hover:border-emerald-300 focus:outline-none h-96"
           ></textarea>
         </div>
       </div>
