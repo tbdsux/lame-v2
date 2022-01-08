@@ -1,5 +1,5 @@
 <template>
-  <section class="flex items-center justify-center w-full py-40">
+  <section class="flex items-center justify-center w-full py-48">
     <div class="text-center">
       <h1 class="text-6xl font-black text-emerald-500">lame</h1>
       <p class="my-4 text-gray-600 text-xl">
