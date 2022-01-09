@@ -1,29 +1,7 @@
-# Nuxt 3 Minimal Starter
+# lame
 
-We recommend to look at the [documentation](https://v3.nuxtjs.org).
+Just a collection of simple / mini web apps.
 
-## Setup
+##
 
-Make sure to install the dependencies
-
-```bash
-yarn install
-```
-
-## Development
-
-Start the development server on http://localhost:3000
-
-```bash
-yarn dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-yarn build
-```
-
-Checkout the [deployment documentation](https://v3.nuxtjs.org/docs/deployment).
+**&copy; 2022 | TheBoringDude | [LICENSE](./LICENSE)**
